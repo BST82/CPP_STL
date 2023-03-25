@@ -1,11 +1,14 @@
-#include<bits/stdc++.h>  
+#include<iostream>  
+#include <sstream>
+#include<string>
+#include <algorithm> 
 using namespace std; 
 
-  string reverseWords(string s) {
+  string reverseWords(string &s) {
         stringstream ss(s);
         string t, ans;
         
-        while (getline(ss, t, ' ')) {
+         while (getline(ss, t, ' ')) {
             reverse(t.begin(), t.end());
             ans += t + ' ';
         }
@@ -16,5 +19,9 @@ int main(){
 string s;
 getline(cin,s);
 
-cout<<reverseWords(s);
+cout<<reverseWords(s)<<"\n";
+
+
 }
+//learn all about stringstream
+//https://www.softwaretestinghelp.com/stringstream-class-in-cpp/
