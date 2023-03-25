@@ -46,3 +46,7 @@ cout<<"After replacement,string is"<<str6;
 
 return 0;  
 }   
+
+//practice leetcode problem
+// 541. Reverse String II
+//557. Reverse Words in a String III
